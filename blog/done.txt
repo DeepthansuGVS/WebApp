@@ -1,0 +1,37 @@
+#What all did we do??
+
+# we created routes for various pages => home and blog
+#we have to add any new app we try to create in the settings
+
+# templates and their use to style the website and also the purpose of a base template
+
+# admin page and its uses and User model introduction
+
+# we created our data in the form of POST model and the render the data on our website using views file
+
+# use Registration Form and how to inherite it and make changes to it and create our own register form
+
+#authentication : login and logout we created the routes for both of them and created a profile view and then 
+#allowed its access only when a person is logged in and otherwise re-route them to the login page
+
+#** whenever you make changes to models then remember to use migrations command to migrate those to your server
+#also do not forget to register your model in the apps admin page to reflect it in the admin
+
+#now we add the profile model and add a profile the picture field 
+
+# next we create a form to edit our user profile => create forms.py -> add these forms in our profile view 
+# we use signals to create a profile for any user and save it when a user is saved 
+# we also use pillows to make changes to the profile picture as we want
+
+#for a model when we want to re-direct to an instance of model after its creation 
+#we need to define a method called get_absolute_url method 
+#also in case of class based views if we want to prevent user from accessing links without login we can do that using mixins
+
+
+#now we create pagination using paginate_by method in our list-view and 
+#using some for loops and if conditions to show pages around it
+#also we created a userlistview that filters the posts based on a particular user and takes them to their posts[paginated]
+#creating another class-based view and overiding the get_queryset method 
+
+#basically ,whenever we create a view we create a url for this view in the url section 
+#and then create a template which is shown when this url is called
